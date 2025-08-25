@@ -9,9 +9,12 @@
 <body>
     <h1>Cloudflare database link test</h1>
     <form id="myForm">
-        <input type="text" id="userData" name="userData" placeholder="Enter something" required>
+        <label for="userInput">Enter a value:</label>
+        <input type="text" id="userInput" name="userInput" required>
         <button type="submit">Submit</button>
-      </form>
+    </form>
+    
+    <p id="responseMessage"></p>
     <script src="scripts.js"></script>
 </body>
 </html>
