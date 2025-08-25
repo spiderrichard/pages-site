@@ -1,5 +1,0 @@
-name = "pages-site"
-type = "javascript"
-
-[build]
-upload.format = "modules"
