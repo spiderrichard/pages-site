@@ -3,7 +3,7 @@ document.getElementById('myForm').addEventListener('submit', async function (e) 
 
   const userInput = document.getElementById('userInput').value;
 
-  const response = await fetch('https://your-worker-url.workers.dev', {
+  const response = await fetch('https://pages-site.spiderrichard.workers.dev', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
