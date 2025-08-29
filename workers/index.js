@@ -4,6 +4,10 @@ export default {
       const data = await request.json();
       console.log("Received data:", data);
 
+      if (!env.MY_DATABASE) {
+        return new Response("Database not connected", { status: 500 });
+      }
+
       await env.MY_DATABASE.prepare(
         `INSERT INTO submissions (value) VALUES (?)`
       ).bind(data.userInput).run();
