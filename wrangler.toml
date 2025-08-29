@@ -1,8 +1,11 @@
 name = "pages-site"
-main = "workers/index.js"
-compatibility_date = "2025-08-25"
+main = "index.js"
+compatibility_date = "2024-08-01"
+
+# If you’ve set a custom domain/route for this worker, add a [routes] block.
+# Otherwise workers.dev is fine.
 
 [[d1_databases]]
-binding = "MY_DATABASE"
-database_name = "pages-site-db"
-database_id = "<your-d1-database-id>"
+binding = "MY_DATABASE"          # must match env.MY_DATABASE in index.js
+database_name = "pages-site-db"  # <— your D1 database name
+database_id = "REPLACE_WITH_D1_ID"  # <— from `wrangler d1 create` or the dashboard
