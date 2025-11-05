@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+<head>
+    {% include head.html %}
+</head>
 <body>
     <nav>
-        <a href="https://spiderrichard.github.io/pages-site/">Home</a>
-        <a href="https://spiderrichard.github.io/pages-site/contact.html">Contact</a>
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/contact.html">Contact</a>
     </nav>
     <section>
         <h1>Contact</h1>
     </section>
-    <script src="assets/scripts.js"></script>
+    <script src="{{ site.baseurl }}/assets/scripts.js"></script>
 </body>
 </html>
