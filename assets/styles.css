@@ -45,6 +45,10 @@ nav .links-list {
     justify-content: center;
 }
 
+nav {
+    height: 50px;
+}
+
 nav .links-list {
     list-style: none;
 }
