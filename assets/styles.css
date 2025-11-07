@@ -5,4 +5,15 @@
 }
 body {
     font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background: greenyellow;
 }
