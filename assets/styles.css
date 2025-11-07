@@ -62,3 +62,7 @@ nav {
 nav .links-list {
     list-style: none;
 }
+
+.content-container {
+    padding: 0 20px;
+}
