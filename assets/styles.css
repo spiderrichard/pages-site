@@ -12,8 +12,9 @@ body {
     align-items: center;
 }
 
+nav,
 section,
-.width-control,
+div,
 footer {
     width: 100%;
 }
@@ -23,10 +24,11 @@ footer {
 }
 
 body,
-.nav-container {
+nav,
+.width-control {
     display: flex;
 }
 
-.nav-container {
-    justify-content: space-between;
+.width-control {
+    justify-content: center;
 }
