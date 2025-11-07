@@ -12,8 +12,12 @@ body {
     align-items: center;
 }
 
+section,
 .width-control {
     width: 100%;
+}
+
+.width-control {
     max-width: 1200px;
 }
 
