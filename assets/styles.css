@@ -1,5 +1,9 @@
 :root {
     --navHeight: 50px;
+    --backgroundColor: rgb(55, 9, 123);
+    --bodyText: antiquewhite;
+    --linkColor: lawngreen;
+    --linkHoverColor: cadetblue;
 }
 * {
     padding: 0;
@@ -9,20 +13,18 @@
 
 body {
     font-family: Roboto;
-    background: rgb(55, 9, 123);
-    color: antiquewhite;
-    flex-direction: column;
-    align-items: center;
+    background: var(--backgroundColor);
+    color: var(--bodyText);
 }
 
 a {
-    color: lawngreen;
+    color: var(--linkColor);
     text-decoration: none;
     text-transform: capitalize;
 }
 
 a:hover {
-    color: cadetblue;
+    color: var(--linkHoverColor);
     text-decoration: underline;
 }
 
@@ -37,7 +39,6 @@ footer {
     max-width: 1200px;
 }
 
-body,
 nav,
 .width-control,
 nav .links-list {
