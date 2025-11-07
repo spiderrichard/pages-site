@@ -1,9 +1,9 @@
 :root {
-    --navHeight: 50px;
     --backgroundColor: rgb(55, 9, 123);
     --bodyText: antiquewhite;
     --linkColor: lawngreen;
     --linkHoverColor: cadetblue;
+    --navHeight: 50px;
 }
 * {
     padding: 0;
