@@ -12,6 +12,12 @@ body {
     align-items: center;
 }
 
+a {
+    color: lawngreen;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 nav,
 section,
 div,
