@@ -60,7 +60,6 @@ nav {
     top: 0;
     left: 0;
     height: var(--navHeight);
-    background: black;
 }
 
 nav .links-list {
@@ -69,4 +68,8 @@ nav .links-list {
 
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
+}
+
+footer {
+    background: black;
 }
