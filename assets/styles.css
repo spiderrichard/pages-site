@@ -18,6 +18,16 @@ body {
     color: var(--bodyText);
 }
 
+.background-color {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at center, #29007b 0%, #1e0158 100%);
+}
+
 a {
     color: var(--linkColor);
     text-decoration: none;
@@ -42,10 +52,11 @@ footer {
 }
 
 nav,
-section,
+nav .content-container,
 nav .links-list,
-.width-control,
-footer {
+section,
+footer,
+.width-control {
     display: flex;
 }
 
@@ -53,6 +64,10 @@ nav,
 section,
 footer {
     justify-content: center;
+}
+
+nav .content-container {
+    justify-content: space-between;
 }
 
 nav {
@@ -74,20 +89,4 @@ section:nth-of-type(1) {
 
 footer {
     background: black;
-}
-
-.background-color {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(circle at center, #29007b 0%, #1e0158 100%);
-}
-
-nav .logo {
-    aspect-ratio: 1/1;
-    width: 20px;
-    height: auto;
 }
