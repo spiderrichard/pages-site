@@ -25,7 +25,8 @@ footer {
 
 body,
 nav,
-.width-control {
+.width-control,
+nav .links-list {
     display: flex;
 }
 
@@ -33,6 +34,6 @@ nav,
     justify-content: center;
 }
 
-nav {
-    background: lawngreen;
+nav .links-list {
+    list-style: none;
 }
