@@ -38,6 +38,7 @@ footer {
 
 .width-control {
     max-width: 1200px;
+    padding: 0 20px;
 }
 
 nav,
@@ -64,10 +65,6 @@ nav {
 
 nav .links-list {
     list-style: none;
-}
-
-.content-container {
-    padding: 0 20px;
 }
 
 section:nth-of-type(1) {
