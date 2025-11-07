@@ -40,12 +40,14 @@ footer {
 }
 
 nav,
-.width-control,
-nav .links-list {
+section,
+nav .links-list,
+.width-control {
     display: flex;
 }
 
-nav {
+nav,
+section {
     justify-content: center;
 }
 
