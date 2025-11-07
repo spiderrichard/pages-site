@@ -5,6 +5,7 @@
     --linkHoverColor: cadetblue;
     --navHeight: 50px;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -42,12 +43,14 @@ footer {
 nav,
 section,
 nav .links-list,
-.width-control {
+.width-control,
+footer {
     display: flex;
 }
 
 nav,
-section {
+section,
+footer {
     justify-content: center;
 }
 
