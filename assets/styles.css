@@ -70,6 +70,6 @@ nav .links-list {
     padding: 0 20px;
 }
 
-section:first {
+section:nth-of-type(0) {
     margin-top: var(--navHeight);
 }
