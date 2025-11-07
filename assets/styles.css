@@ -55,6 +55,9 @@ footer {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: var(--navHeight);
     background: black;
 }
@@ -65,4 +68,8 @@ nav .links-list {
 
 .content-container {
     padding: 0 20px;
+}
+
+section:first {
+    margin-top: var(--navHeight);
 }
