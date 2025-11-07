@@ -61,6 +61,7 @@ nav {
     left: 0;
     height: var(--navHeight);
     border-bottom: 1px solid black;
+    box-shadow: 0 12px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 nav .links-list {
