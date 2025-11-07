@@ -41,6 +41,7 @@ nav .links-list {
     display: flex;
 }
 
+nav,
 .width-control {
     justify-content: center;
 }
