@@ -7,7 +7,7 @@ body {
     font-family: Roboto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .nav-container {
