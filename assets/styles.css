@@ -68,6 +68,7 @@ footer {
 
 nav .content-container {
     justify-content: space-between;
+    align-items: center;
 }
 
 nav {
