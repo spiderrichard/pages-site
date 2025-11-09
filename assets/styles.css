@@ -82,6 +82,7 @@ nav {
 
 nav .links-list {
     list-style: none;
+    gap: 10px;
 }
 
 section:nth-of-type(1) {
