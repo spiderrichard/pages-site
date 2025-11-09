@@ -4,6 +4,7 @@
     --linkColor: lawngreen;
     --linkHoverColor: cadetblue;
     --navHeight: 50px;
+    --contentGap: 20px;
 }
 
 * {
@@ -71,6 +72,10 @@ nav .content-container {
     align-items: center;
 }
 
+nav .links-list {
+    gap: var(--contentGap);
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -82,7 +87,6 @@ nav {
 
 nav .links-list {
     list-style: none;
-    gap: 10px;
 }
 
 section:nth-of-type(1) {
