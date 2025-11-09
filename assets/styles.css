@@ -1,5 +1,6 @@
 :root {
     --backgroundColor: black;
+    --backgroundPurpleOuter: #1e0158;
     --bodyText: antiquewhite;
     --linkColor: lawngreen;
     --linkHoverColor: cadetblue;
@@ -104,4 +105,10 @@ button {
     border-radius: 16px;
     padding: 5px 10px;
     text-transform: capitalize;
+}
+
+button:hover {
+    background: white;
+    color: var(--backgroundPurpleOuter);
+    border: 1px solid var(--backgroundPurpleOuter);
 }
