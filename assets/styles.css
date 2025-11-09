@@ -108,6 +108,7 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
     background: white;
     color: var(--backgroundPurpleOuter);
     border: 1px solid var(--backgroundPurpleOuter);
