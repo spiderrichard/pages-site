@@ -115,6 +115,10 @@ nav .links-list {
     list-style: none;
 }
 
+.menu-wrapper {
+    width: fit-content;
+}
+
 section {
     margin-bottom: var(--sectionMarginBottom);
 }
@@ -143,4 +147,21 @@ button:hover {
     border: 1px solid var(--backgroundPurpleOuter);
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .menu-wrapper {
+        width: fit-content;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px;
+        background: #000000ad;
+        color: var(--backgroundColor);
+        width: 50vw;
+        height: calc(100vh - var(--navHeight));
+        backdrop-filter: blur(25px);
+    }
+
+    nav .links-list {
+        flex-direction: column;
+    }
+}
