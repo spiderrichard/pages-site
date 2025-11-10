@@ -106,6 +106,10 @@ nav {
     box-shadow: 0 12px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
+nav .logo {
+    border-radius: 5px;
+}
+
 nav .links-list {
     list-style: none;
 }
