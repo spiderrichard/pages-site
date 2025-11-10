@@ -147,6 +147,10 @@ button:hover {
     border: 1px solid var(--backgroundPurpleOuter);
 }
 
+.menu-wrapper.open {
+    left: 0;
+}
+
 @media screen and (max-width: 768px) {
     .menu-wrapper {
         width: fit-content;
