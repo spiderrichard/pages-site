@@ -40,15 +40,15 @@ body {
     font-family: Roboto;
     background: var(--backgroundColor);
     color: var(--bodyText);
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
 }
 
 p {
-    font-size: 1.4rem; /* 14px */
+    font-size: 1.8rem; /* 14px */
   }
 
 .background-color {
