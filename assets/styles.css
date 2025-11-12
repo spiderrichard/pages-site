@@ -15,7 +15,8 @@
 }
 
 html { 
-    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 62.5%;
 }
 
 :root {
@@ -39,7 +40,16 @@ body {
     font-family: Roboto;
     background: var(--backgroundColor);
     color: var(--bodyText);
+    font-size: 1.6rem;
 }
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.4rem; /* 14px */
+  }
 
 .background-color {
     position: absolute;
