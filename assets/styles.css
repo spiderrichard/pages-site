@@ -117,6 +117,11 @@ nav {
     box-shadow: 0 12px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
+nav .hamburger-menu {
+    height: 40px;
+    width: 40px;
+}
+
 nav .logo {
     border-radius: 8px;
 }
