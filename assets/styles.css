@@ -156,8 +156,9 @@ button {
     color: white;
     border: 1px solid white;
     border-radius: 16px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-transform: capitalize;
+    font-size: 1.6rem;
 }
 
 .mobile-menu-toggle {
