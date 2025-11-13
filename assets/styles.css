@@ -122,6 +122,10 @@ nav {
     box-shadow: 0 12px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
+.navigation-bar.scrolled {
+    background: yellow;
+}
+
 nav .logo {
     border-radius: 8px;
 }
