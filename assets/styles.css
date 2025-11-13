@@ -86,6 +86,7 @@ footer {
 
 nav,
 nav .content-container,
+nav .nav-left-content,
 nav .links-list,
 section,
 footer,
@@ -104,6 +105,7 @@ nav .content-container {
     align-items: center;
 }
 
+nav .nav-left-content,
 nav .links-list {
     gap: var(--contentGap);
 }
@@ -126,6 +128,7 @@ nav .logo {
     border-radius: 8px;
 }
 
+nav .nav-left-content,
 nav .links-list {
     list-style: none;
 }
