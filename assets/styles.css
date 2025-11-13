@@ -129,6 +129,7 @@ nav {
 
 .navigation-bar.scrolled {
     background: yellow;
+    color: var(--backgroundColor);
 }
 
 nav .logo {
