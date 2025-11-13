@@ -182,7 +182,7 @@ button:hover {
     outline: none;
 }
 
-.mobile-menu-toggle {
+.mobile-menu-toggle svg {
     color: white;
     width: 40px;
     height: 40px;
