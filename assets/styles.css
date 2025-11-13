@@ -175,6 +175,10 @@ button {
     outline: none;
 }
 
+.hamburger-menu-icon {
+    color: white;
+}
+
 button:hover {
     cursor: pointer;
     background: white;
