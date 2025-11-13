@@ -155,13 +155,6 @@ button {
     text-transform: capitalize;
 }
 
-.mobile-menu-toggle {
-    background: limegreen;
-    border: none;
-    border-radius: unset;
-    padding: 0;
-}
-
 button:hover {
     cursor: pointer;
     background: white;
