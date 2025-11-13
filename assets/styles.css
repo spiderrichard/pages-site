@@ -189,11 +189,11 @@ button:hover {
         width: fit-content;
         position: absolute;
         top: 100%;
-        left: -50vw;
+        width: 80vw;
+        left: -80vw;
         padding: 20px;
         background: #000000ad;
         color: var(--backgroundColor);
-        width: 50vw;
         height: calc(100vh - var(--navHeight));
         backdrop-filter: blur(25px);
         transition: var(--smoothTransition);
