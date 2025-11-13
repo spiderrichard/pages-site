@@ -161,11 +161,23 @@ button {
     font-size: 1.6rem;
 }
 
+button:hover {
+    cursor: pointer;
+    background: white;
+    color: var(--backgroundPurpleOuter);
+    border: 1px solid var(--backgroundPurpleOuter);
+}
+
 .mobile-menu-toggle {
-    background: limegreen;
     border: none;
     border-radius: unset;
     padding: 0;
+}
+
+.mobile-menu-toggle:hover {
+    background: transparent;
+    color: white;
+    border: none;
 }
 
 .mobile-menu-toggle:active,
@@ -176,13 +188,8 @@ button {
 
 .hamburger-menu-icon {
     color: white;
-}
-
-button:hover {
-    cursor: pointer;
-    background: white;
-    color: var(--backgroundPurpleOuter);
-    border: 1px solid var(--backgroundPurpleOuter);
+    width: 40px;
+    height: 40px;
 }
 
 .menu-wrapper.open {
