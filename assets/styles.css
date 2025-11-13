@@ -28,6 +28,7 @@ html {
     --navHeight: 75px;
     --contentGap: 20px;
     --sectionMarginBottom: 40px;
+    --smoothTransition: all .6s ease;
 }
 
 * {
@@ -195,6 +196,7 @@ button:hover {
         width: 50vw;
         height: calc(100vh - var(--navHeight));
         backdrop-filter: blur(25px);
+        transition: var(--smoothTransition);
     }
 
     .mobile-menu-toggle-container {
