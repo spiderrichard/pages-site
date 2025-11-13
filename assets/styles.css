@@ -172,6 +172,7 @@ button {
 .mobile-menu-toggle:active,
 .mobile-menu-toggle:focus {
     border: none;
+    outline: none;
 }
 
 button:hover {
