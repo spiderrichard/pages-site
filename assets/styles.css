@@ -171,6 +171,7 @@ button:hover {
 }
 
 .mobile-menu-toggle:hover {
+    background: transparent;
     color: white;
     border: none;
 }
