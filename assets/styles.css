@@ -190,6 +190,7 @@ button:hover {
 
 .hamburger-menu-icon.hide,
 .x-close-mark-icon.hide {
+    transition: var(--smoothTransition);
     display: none;
 }
 
