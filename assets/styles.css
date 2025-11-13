@@ -128,7 +128,7 @@ nav {
 }
 
 .navigation-bar.scrolled {
-    background: yellow;
+    background: white;
     color: var(--backgroundColor);
 }
 
