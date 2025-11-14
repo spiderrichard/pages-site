@@ -131,6 +131,10 @@ nav {
     background: white;
 }
 
+.navigation-bar button.scrolled {
+    color: var(--backgroundPurpleOuter);
+}
+
 nav .logo {
     border-radius: 8px;
 }
