@@ -176,6 +176,11 @@ nav button {
     border: none;
 }
 
+nav button.scrolled {
+    color: var(--backgroundPurpleOuter);
+    border: 1px solid var(--backgroundPurpleOuter);
+}
+
 .mobile-menu-toggle {
     border: none;
     border-radius: unset;
