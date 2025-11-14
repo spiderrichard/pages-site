@@ -173,6 +173,7 @@ button:hover {
 
 nav button {
     color: white;
+    border: none;
 }
 
 .mobile-menu-toggle {
