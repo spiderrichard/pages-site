@@ -8,6 +8,8 @@ const closeIcon = document.querySelector('.x-close-mark-icon');
 const navBar = document.querySelector('.navigation-bar');
 const navBarBtns = document.querySelectorAll('.navigation-bar[button]');
 
+console.log(navBarBtns);
+
 mobileMenuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
     if (mobileMenu.classList.contains('open')) {
