@@ -150,6 +150,7 @@ section {
 
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
+    height: 100vh;
 }
 
 button {
