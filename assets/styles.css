@@ -171,6 +171,10 @@ button:hover {
     color: var(--backgroundPurpleOuter);
 }
 
+nav button {
+    color: white;
+}
+
 .mobile-menu-toggle {
     border: none;
     border-radius: unset;
@@ -190,7 +194,6 @@ button:hover {
 }
 
 .mobile-menu-toggle svg {
-    color: white;
     width: 40px;
     height: 40px;
 }
