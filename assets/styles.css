@@ -182,7 +182,7 @@ nav button.scrolled {
 }
 
 .mobile-menu-toggle {
-    border: none;
+    border: none !important;
     border-radius: unset;
     padding: 0;
 }
