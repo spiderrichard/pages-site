@@ -6,6 +6,7 @@ const mobileMenu = document.querySelector('.menu-wrapper');
 const hamburgerMenuIcon = document.querySelector('.hamburger-menu-icon');
 const closeIcon = document.querySelector('.x-close-mark-icon');
 const navBar = document.querySelector('.navigation-bar');
+const navBarBtns = document.querySelectorAll('.navigation-bar[button]');
 
 mobileMenuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
@@ -33,7 +34,9 @@ function getScrollTop() {
 window.addEventListener('scroll', () => {
     if (getScrollTop() > 1) {
         navBar.classList.add('scrolled');
+        navBarBtns.forEach(btn => {btn.classList.add('scrolled')});
     } else {
         navBar.classList.remove('scrolled');
+        navBarBtns.forEach(btn => {btn.classList.remove('scrolled')});
     }
 });
