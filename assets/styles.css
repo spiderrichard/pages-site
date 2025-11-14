@@ -129,7 +129,6 @@ nav {
 
 .navigation-bar.scrolled {
     background: white;
-    color: var(--backgroundColor);
 }
 
 nav .logo {
@@ -159,8 +158,6 @@ footer {
 
 button {
     background: transparent;
-    color: white;
-    border: 1px solid white;
     border-radius: 16px;
     padding: 10px 20px;
     text-transform: capitalize;
@@ -171,7 +168,6 @@ button:hover {
     cursor: pointer;
     background: white;
     color: var(--backgroundPurpleOuter);
-    border: 1px solid var(--backgroundPurpleOuter);
 }
 
 .mobile-menu-toggle {
