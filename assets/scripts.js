@@ -10,6 +10,7 @@ const navBarBtns = document.querySelectorAll('.navigation-bar button');
 
 mobileMenuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
+    document.body.classList.toggle('fixed');
     if (mobileMenu.classList.contains('open')) {
         hamburgerMenuIcon.classList.add('hide');
         closeIcon.classList.remove('hide');
