@@ -160,7 +160,9 @@ section {
 
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
-    height: calc(100vh - var(--navHeight));
+}
+section {
+    margin-bottom: var(--sectionMarginBottom);
 }
 
 button {
