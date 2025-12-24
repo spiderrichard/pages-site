@@ -49,11 +49,11 @@ body.fixed {
 }
 
 h1 {
-    font-size: 3.4rem;
+    font-size: clamp(24px,6vw,50px);
 }
 
 p {
-    font-size: 1.8rem; /* 14px */
+    font-size: 1.8rem;
   }
 
 .background-color {
@@ -85,7 +85,7 @@ footer {
 }
 
 .width-control {
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 0 20px;
 }
 
