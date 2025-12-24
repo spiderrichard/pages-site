@@ -161,6 +161,7 @@ section {
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
 }
+
 section {
     margin-bottom: var(--sectionMarginBottom);
 }
