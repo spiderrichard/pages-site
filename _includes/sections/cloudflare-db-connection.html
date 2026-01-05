@@ -8,6 +8,33 @@
         <div class="content-container">
             <h2>Cloudflare Database Connection</h2>
             <p>Use the form below to enter a test message to my cloudflare database and watch the table below update with the results!</p>
+
+            <form id="entryForm">
+                <input id="value" placeholder="Type something..." required />
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="msg"></p>
         </div>
     </div>
 </section>
+<script>
+  const WORKER_URL = "https://YOUR-WORKER.workers.dev/add";
+
+  document.getElementById("entryForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const value = document.getElementById("value").value.trim();
+    if (!value) return;
+
+    const res = await fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ value })
+    });
+
+    const data = await res.json().catch(() => ({}));
+    document.getElementById("msg").textContent =
+      res.ok ? "Saved ✅" : (data.error || "Error ❌");
+  });
+</script>
