@@ -167,6 +167,21 @@ section {
 }
 
 button {
+    background: lime;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--linkHoverColor);;
+    color: white;
+}
+
+.nav-contact-btn {
     background: transparent;
     border-radius: 16px;
     padding: 10px 20px;
@@ -174,18 +189,18 @@ button {
     font-size: 1.6rem;
 }
 
-button:hover {
+.nav-contact-btn:hover {
     cursor: pointer;
     background: white;
     color: var(--backgroundPurpleOuter);
 }
 
-nav button {
+.nav-contact-btn {
     color: white;
     border: none;
 }
 
-nav button.scrolled {
+.nav-contact-btn.scrolled {
     color: var(--backgroundPurpleOuter);
     border: 1px solid var(--backgroundPurpleOuter);
 }
