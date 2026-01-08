@@ -19,22 +19,38 @@
     </div>
 </section>
 <script>
-  const WORKER_URL = "https://YOUR-WORKER.workers.dev/add";
-
-  document.getElementById("entryForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const value = document.getElementById("value").value.trim();
-    if (!value) return;
-
-    const res = await fetch(WORKER_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ value })
-    });
-
-    const data = await res.json().catch(() => ({}));
-    document.getElementById("msg").textContent =
-      res.ok ? "Saved ✅" : (data.error || "Error ❌");
-  });
-</script>
+    (function () {
+      const form = document.getElementById("entryForm");
+      const input = document.getElementById("value");
+      const msg = document.getElementById("msg");
+  
+      if (!form || !input) return;
+  
+      const API_BASE = "https://example-database.spiderrichard.workers.dev";
+  
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+  
+        const value = input.value.trim();
+        if (!value) return;
+  
+        msg && (msg.textContent = "Saving...");
+  
+        try {
+          const res = await fetch(`${API_BASE}/api/entry`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ value }),
+          });
+  
+          if (!res.ok) throw new Error(await res.text());
+  
+          input.value = "";
+          msg && (msg.textContent = "Saved ✅");
+        } catch (err) {
+          console.error(err);
+          msg && (msg.textContent = "Error saving ❌");
+        }
+      });
+    })();
+  </script>
