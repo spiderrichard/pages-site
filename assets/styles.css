@@ -166,6 +166,11 @@ section {
     margin-bottom: var(--sectionMarginBottom);
 }
 
+.index-landing {
+    min-height: fit-content;
+    height: 80vh;
+}
+
 button {
     background: lime;
     border-radius: 5px;
