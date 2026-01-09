@@ -242,6 +242,13 @@ button:hover {
     display: none;
 }
 
+.entry-form {
+    display: flex;
+    gap: 10px;
+    background: cornflowerblue;
+    padding: 10px;
+}
+
 footer {
     background: black;
 }
