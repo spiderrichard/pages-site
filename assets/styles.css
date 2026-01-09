@@ -249,6 +249,10 @@ button:hover {
     padding: 10px;
 }
 
+.entry-form-input {
+    flex: 1;
+}
+
 footer {
     background: black;
 }
