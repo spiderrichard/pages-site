@@ -152,11 +152,9 @@ nav .links-list {
     width: fit-content;
 }
 
-/*
 section {
-    margin-bottom: var(--sectionMarginBottom);
+    border: 1px solid lime;
 }
-*/
 
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
