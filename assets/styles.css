@@ -54,7 +54,12 @@ h1 {
 
 p {
     font-size: 1.8rem;
-  }
+}
+
+.section-header,
+.section-description { 
+    margin-bottom: 20px; 
+}
 
 .background-color {
     position: fixed;
