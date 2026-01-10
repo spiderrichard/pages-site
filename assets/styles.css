@@ -190,6 +190,12 @@ section:nth-of-type(1) {
     outline: none;
 }
 
+.nav-contact-btn {
+    background: none;
+    border: none;
+    color: white;
+}
+
 .mobile-menu-toggle svg,
 .nav-contact-btn svg { 
     width: 40px;
