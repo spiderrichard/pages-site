@@ -228,7 +228,8 @@ button:hover {
     outline: none;
 }
 
-.mobile-menu-toggle svg {
+.mobile-menu-toggle svg,
+.nav-contact-btn svg { 
     width: 40px;
     height: 40px;
 }
