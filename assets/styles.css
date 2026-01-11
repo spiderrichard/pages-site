@@ -167,11 +167,6 @@ section:nth-of-type(1) {
     height: 80vh;
 }
 
-.nav-contact-btn.scrolled {
-    color: var(--backgroundPurpleOuter);
-    border: 1px solid var(--backgroundPurpleOuter);
-}
-
 .mobile-menu-toggle {
     border: none !important;
     border-radius: unset;
