@@ -126,7 +126,7 @@ nav .links-list li {
 }
 
 nav .links-list li:not(:first-of-type) {
-    border-right: 1px solid var(--linkColor);
+    border-left: 1px solid var(--linkColor);
 }
 
 nav .links-list li:not(:last-of-type) {
