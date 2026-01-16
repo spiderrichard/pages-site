@@ -121,7 +121,7 @@ nav .content-container {
     align-items: center;
 }
 
-nav .links-list {
+nav .links-list li {
     padding: 0 var(--contentGap);
 }
 
