@@ -1,4 +1,9 @@
-// Elements
+// On Page Load
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.links-list li').forEach(li => {
+        li.classList.add('active');
+    });
+});
 
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
