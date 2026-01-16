@@ -123,10 +123,15 @@ nav .content-container {
 
 nav .links-list li {
     padding: 0 var(--contentGap);
+    border-left: 1px solid var(--linkColor);
+    border-right: 1px solid var(--linkColor);
 }
 
+nav .links-list li:not(:first-of-type) {
+    border-left: none;
+}
 nav .links-list li:not(:last-of-type) {
-    background: lawngreen;
+    border-right: none;
 }
 
 nav .nav-left-content {
