@@ -125,6 +125,10 @@ nav .links-list li {
     padding: 0 var(--contentGap);
 }
 
+nav .links-list li:not(:last-of-type) {
+    background: lawngreen;
+}
+
 nav .nav-left-content {
     gap: var(--contentGap);
 }
