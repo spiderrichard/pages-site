@@ -2,8 +2,8 @@
     .spinner {
         width: 32px;
         height: 32px;
-        border: 3px solid rgba(0, 0, 0, 0.2);
-        border-top-color: rgba(0, 0, 0, 0.8);
+        border: 3px solid #00ff0080;
+        border-top-color: lime;
         border-radius: 50%;
         animation: spin 0.8s linear infinite;
     }
@@ -17,8 +17,22 @@
     .index-landing h1 {
         margin: var(--contentGap) 0;
     }
+
+    .spinner-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
 </style>
-<div class="spinner" aria-hidden="true"></div>
+<div class="spinner-container">
+    <div class="spinner" aria-hidden="true"></div>
+</div>
 <section class="index-landing">
     <div class="width-control">
         <div class="content-container">
