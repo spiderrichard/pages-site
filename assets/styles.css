@@ -56,13 +56,6 @@ p {
     font-size: 1.8rem;
 }
 
-/* Animations */
-.hidden {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: var(--smoothTransition);
-}
-
 .section-header {
     margin-top: 40px;
 }

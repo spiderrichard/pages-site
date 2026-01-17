@@ -1,6 +1,11 @@
 // On Page Load
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.links-list').classList.remove('hidden');
+window.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".links-list");
+    if (!el) return;
+  
+    requestAnimationFrame(() => {
+        el.classList.remove("hidden");
+    });
 });
 
 //nav
