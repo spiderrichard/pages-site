@@ -28,7 +28,7 @@ html {
     --navHeight: 75px;
     --contentGap: 20px;
     --sectionMarginBottom: 40px;
-    --smoothTransition: all .6s ease;
+    --smoothTransition: all 600ms ease-in-out;
 }
 
 * {
