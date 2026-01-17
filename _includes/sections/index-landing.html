@@ -30,9 +30,11 @@
         z-index: 1;
         transition: all 0.3s ease;
         opacity: 0;
+        backdrop-filter: blur(0);
     }
     .spinner-container.active {
         opacity: 1;
+        backdrop-filter: blur(10px);
     }
 </style>
 <div class="spinner-container active">
