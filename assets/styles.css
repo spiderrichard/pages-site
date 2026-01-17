@@ -35,6 +35,8 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 body {
@@ -122,15 +124,7 @@ nav .content-container {
 }
 
 nav .links-list li {
-    transition: all 0.3s ease;
-    transform: translateY(16px);
-    opacity: 0;
     padding: 0 var(--contentGap);
-}
-
-nav .links-list li.active {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 nav .links-list li:not(:first-of-type) {
@@ -235,6 +229,14 @@ section:nth-of-type(1) {
 footer {
     background: black;
 }
+
+/* Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: var(--smoothTransition);
+}
+
 
 @media screen and (max-width: 1024px) {
     .menu-wrapper {
