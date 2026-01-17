@@ -14,6 +14,11 @@ const io = new IntersectionObserver((entries, obs) => {
 
 sections.forEach(section => io.observe(section));
 
+//On Load
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.spinner-container').classList.remove('active');
+});
+
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.menu-wrapper');
