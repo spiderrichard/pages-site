@@ -28,7 +28,7 @@ html {
     --navHeight: 75px;
     --contentGap: 20px;
     --sectionMarginBottom: 40px;
-    --smoothTransition: all 600ms ease-in-out;
+    --smoothTransition: all 1s ease-in-out;
 }
 
 * {
@@ -50,7 +50,7 @@ body.fixed {
 
 .lazy-load {
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: var(--smoothTransition);
     transform: translateY(16px);
 }
 
