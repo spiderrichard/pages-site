@@ -219,6 +219,13 @@ section:nth-of-type(1) {
 .nav-contact-btn svg { 
     width: 40px;
     height: 40px;
+    transition: var(--smoothTransition);
+}
+
+.nav-contact-btn svg:hover {
+    color: var(--linkHoverColor);
+    width: 50px;
+    height: 50px;
 }
 
 .hamburger-menu-icon.hide,
