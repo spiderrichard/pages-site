@@ -1,13 +1,3 @@
-// On Page Load
-window.addEventListener("DOMContentLoaded", () => {
-    const el = document.querySelector(".links-list");
-    if (!el) return;
-  
-    requestAnimationFrame(() => {
-        el.classList.remove("hidden");
-    });
-});
-
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.menu-wrapper');
