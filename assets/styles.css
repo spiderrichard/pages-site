@@ -225,7 +225,7 @@ section:nth-of-type(1) {
 }
 
 .nav-contact-btn svg:hover {
-    color: var(--linkColor);
+    color: var(--linkHoverColor);
     background: #ffffff29;
     border-radius: 6px;
     cursor: pointer;
