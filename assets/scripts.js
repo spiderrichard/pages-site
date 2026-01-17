@@ -18,7 +18,7 @@ const io = new IntersectionObserver((entries, obs) => {
     obs.unobserve(entry.target);
   });
 }, {
-  rootMargin: '200px 0px'
+  rootMargin: '0px'
 });
 
 sections.forEach(section => io.observe(section));
