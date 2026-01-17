@@ -186,7 +186,7 @@ section:nth-of-type(1) {
 
 .index-landing {
     min-height: fit-content;
-    height: 80vh;
+    height: 200vh;
 }
 
 .mobile-menu-toggle {
