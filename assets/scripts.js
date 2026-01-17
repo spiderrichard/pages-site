@@ -1,3 +1,12 @@
+//On Load
+document.addEventListener('DOMContentLoaded', () => {
+    const spinnerContainer = document.querySelector('.spinner-container');
+    spinnerContainer.classList.remove('active');
+    setTimeout(() => {
+        spinnerContainer.style.display = 'none';
+    }, 300);
+});
+
 //Lazy Loading
 const sections = document.querySelectorAll('.lazy-load');
 
@@ -13,15 +22,6 @@ const io = new IntersectionObserver((entries, obs) => {
 });
 
 sections.forEach(section => io.observe(section));
-
-//On Load
-document.addEventListener('DOMContentLoaded', () => {
-    const spinnerContainer = document.querySelector('.spinner-container');
-    spinnerContainer.classList.remove('active');
-    setTimeout(() => {
-        spinnerContainer.style.display = 'none';
-    }, 300);
-});
 
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
