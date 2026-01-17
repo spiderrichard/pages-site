@@ -48,6 +48,17 @@ body.fixed {
     overflow: hidden;
 }
 
+.lazy-load {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translateY(16px);
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 h1 {
     font-size: clamp(24px,6vw,50px);
 }

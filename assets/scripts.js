@@ -1,3 +1,19 @@
+//Lazy Loading
+const sections = document.querySelectorAll('.lazy-load');
+
+const io = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add('loaded');
+    obs.unobserve(entry.target);
+  });
+}, {
+  rootMargin: '200px 0px'
+});
+
+sections.forEach(section => io.observe(section));
+
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.menu-wrapper');
