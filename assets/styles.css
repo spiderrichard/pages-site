@@ -91,6 +91,7 @@ a {
     color: var(--linkColor);
     text-decoration: none;
     text-transform: capitalize;
+    transition: var(--hoverTransition);
 }
 
 a:hover {
