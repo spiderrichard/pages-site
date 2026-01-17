@@ -224,6 +224,8 @@ section:nth-of-type(1) {
 
 .nav-contact-btn svg:hover {
     color: var(--linkColor);
+    background: #ffffff29;
+    border-radius: 6px;
 }
 
 .hamburger-menu-icon.hide,
