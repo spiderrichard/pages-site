@@ -16,7 +16,11 @@ sections.forEach(section => io.observe(section));
 
 //On Load
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.spinner-container').classList.remove('active');
+    const spinnerContainer = document.querySelector('.spinner-container');
+    spinnerContainer.classList.remove('active');
+    setTimeout(() => {
+        spinnerContainer.style.display = 'none';
+    }, 300);
 });
 
 //nav
