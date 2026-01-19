@@ -272,7 +272,20 @@ footer {
     }
 
     nav .links-list li {
+        padding: unset;
         border-left: 1px solid var(--linkColor);
         border-right: 1px solid var(--linkColor);
+    }
+
+    nav .links-list a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav .links-list a:hover {
+        color: var(--backgroundPurpleOuter);
+        background: var(--linkColor);
     }
 }
