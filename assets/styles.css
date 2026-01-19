@@ -270,4 +270,9 @@ footer {
     nav .links-list {
         flex-direction: column;
     }
+
+    nav .links-list li {
+        border-left: 1px solid var(--linkColor);
+        border-right: 1px solid var(--linkColor);
+    }
 }
