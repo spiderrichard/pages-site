@@ -28,7 +28,7 @@ html {
     --navHeight: 75px;
     --contentGap: 20px;
     --sectionMarginBottom: 40px;
-    --smoothTransition: all 1s ease-in-out;
+    --smoothTransition: all 0.3s cubic-bezier(0.03, 0.3, 0.20, 1);
     --hoverTransition: all 0.3s ease-in-out;
 }
 
