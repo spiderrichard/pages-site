@@ -1,4 +1,27 @@
-// Elements
+//On Load
+document.addEventListener('DOMContentLoaded', () => {
+    const spinnerContainer = document.querySelector('.spinner-container');
+    spinnerContainer.classList.remove('active');
+    setTimeout(() => {
+        spinnerContainer.style.display = 'none';
+    }, 300);
+});
+
+//Lazy Loading
+const sections = document.querySelectorAll('.lazy-load');
+
+const io = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add('loaded');
+    obs.unobserve(entry.target);
+  });
+}, {
+  rootMargin: '0px'
+});
+
+sections.forEach(section => io.observe(section));
 
 //nav
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');

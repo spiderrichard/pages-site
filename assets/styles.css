@@ -28,7 +28,8 @@ html {
     --navHeight: 75px;
     --contentGap: 20px;
     --sectionMarginBottom: 40px;
-    --smoothTransition: all .6s ease;
+    --smoothTransition: all 0.3s cubic-bezier(0.03, 0.3, 0.20, 1);
+    --hoverTransition: all 0.3s ease-in-out;
 }
 
 * {
@@ -46,6 +47,17 @@ body {
 
 body.fixed {
     overflow: hidden;
+}
+
+.lazy-load {
+    opacity: 0;
+    transition: var(--smoothTransition);
+    transform: translateY(16px);
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1 {
@@ -79,11 +91,11 @@ a {
     color: var(--linkColor);
     text-decoration: none;
     text-transform: capitalize;
+    transition: var(--hoverTransition);
 }
 
 a:hover {
     color: var(--linkHoverColor);
-    text-decoration: underline;
 }
 
 nav,
@@ -121,8 +133,19 @@ nav .content-container {
     align-items: center;
 }
 
-nav .nav-left-content,
-nav .links-list {
+nav .links-list li {
+    padding: 0 var(--contentGap);
+}
+
+nav .links-list li:not(:first-of-type) {
+    border-left: 1px solid var(--linkColor);
+}
+
+nav .links-list li:not(:last-of-type) {
+    border-right: 1px solid var(--linkColor);
+}
+
+nav .nav-left-content {
     gap: var(--contentGap);
 }
 
@@ -130,6 +153,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     height: var(--navHeight);
     border-bottom: 1px solid black;
     box-shadow: 0 12px 6px -4px rgba(0, 0, 0, 0.1);
@@ -164,13 +188,15 @@ section:nth-of-type(1) {
 
 .index-landing {
     min-height: fit-content;
-    height: 80vh;
+    height: 100vh;
 }
 
 .mobile-menu-toggle {
     border: none !important;
     border-radius: unset;
     padding: 0;
+    background: none;
+    color: white;
 }
 
 .mobile-menu-toggle:hover {
@@ -195,6 +221,13 @@ section:nth-of-type(1) {
 .nav-contact-btn svg { 
     width: 40px;
     height: 40px;
+    transition: var(--hoverTransition);
+}
+
+.nav-contact-btn svg:hover {
+    color: var(--linkHoverColor);
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .hamburger-menu-icon.hide,
@@ -215,7 +248,8 @@ footer {
     background: black;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
     .menu-wrapper {
         width: fit-content;
         position: absolute;
@@ -236,5 +270,23 @@ footer {
 
     nav .links-list {
         flex-direction: column;
+    }
+
+    nav .links-list li {
+        padding: unset;
+        border-left: 1px solid var(--linkColor);
+        border-right: 1px solid var(--linkColor);
+    }
+
+    nav .links-list a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav .links-list a:hover {
+        color: var(--backgroundPurpleOuter);
+        background: var(--linkColor);
     }
 }
