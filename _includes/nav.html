@@ -3,7 +3,11 @@
         <div class="content-container">
             <ul class="nav-left-content">
                 <li class="mobile-menu-toggle-container">
-                    <button class="mobile-menu-toggle" aria-label="Mobile Menu Toggle">
+                    <button 
+                        class="mobile-menu-toggle" 
+                        aria-label="Mobile Menu Toggle"
+                        data-element-type="hamburger-menu-toggle"
+                    >
                         {% include icons/hamburger-menu %}
                         {% include icons/x-close-mark %}
                         </svg>
@@ -16,6 +20,7 @@
                         width="40"
                         height="40"
                         alt="Site Logo"
+                        data-element-type="site-logo"
                     >
                 </li>
             </ul>
@@ -63,7 +68,10 @@
                     </li>
                 </ul>
             </div>
-            <button class="nav-contact-btn">
+            <button 
+                class="nav-contact-btn"
+                data-element-type="email-contact-button"
+            >
                 {% include icons/envelope %}
             </button>
         </div>
