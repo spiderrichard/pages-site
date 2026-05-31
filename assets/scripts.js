@@ -14,11 +14,19 @@ const io = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
 
-    entry.target.classList.add('loaded');
-    obs.unobserve(entry.target);
+    const section = entry.target;
+    const template = section.querySelector(':scope > template');
+
+    if (template) {
+      section.appendChild(template.content.cloneNode(true));
+      template.remove();
+    }
+
+    section.classList.add('loaded');
+    obs.unobserve(section);
   });
 }, {
-  rootMargin: '0px'
+  rootMargin: '300px 0px'
 });
 
 sections.forEach(section => io.observe(section));

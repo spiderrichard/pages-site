@@ -20,29 +20,35 @@
 }
 </style>
 <section class="cloudflare-db-connection lazy-load">
-    <div class="width-control">
-        <div class="content-container">
-            <h2 class="section-header">Cloudflare Database Connection</h2>
-            <p class="section-description">Use the form below to enter a test message to my cloudflare database and watch the table below update with the results!</p>
+	<template>
+		<div class="width-control">
+			<div class="content-container">
+				<h2 class="section-header">Cloudflare Database Connection</h2>
+				<p class="section-description">Use the form below to enter a test message to my cloudflare database and watch the table below update with the results!</p>
 
             <form id="entryForm" class="entry-form">
                 <input id="value" class="entry-form-input" placeholder="Type something..." required />
                 <button class="entry-form-submit" type="submit">Submit</button>
             </form>
+				<form id="entryForm" class="entry-form">
+					<input id="value" class="entry-form-input" placeholder="Type something..." required />
+					<button type="submit">Submit</button>
+				</form>
 
-            <p id="msg"></p>
+				<p id="msg"></p>
 
-            <table id="entriesTable" style="margin-top: 1rem; width: 100%; border-collapse: collapse;">
-              <thead>
-                <tr>
-                  <th style="text-align:left; border-bottom:1px solid #ccc;">Message</th>
-                  <th style="text-align:left; border-bottom:1px solid #ccc;">Created</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-        </div>
-    </div>
+				<table id="entriesTable" style="margin-top: 1rem; width: 100%; border-collapse: collapse;">
+				<thead>
+					<tr>
+					<th style="text-align:left; border-bottom:1px solid #ccc;">Message</th>
+					<th style="text-align:left; border-bottom:1px solid #ccc;">Created</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</template>
 </section>
 <script>
     (function () {
