@@ -15,7 +15,9 @@ const io = new IntersectionObserver((entries, obs) => {
     if (!entry.isIntersecting) return;
 
     const section = entry.target;
+    console.log(section)
     const template = section.querySelector('template');
+    console.log(template)
 
     if (template) {
       section.appendChild(template.content.cloneNode(true));
