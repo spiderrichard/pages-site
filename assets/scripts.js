@@ -23,14 +23,17 @@ const io = new IntersectionObserver((entries, obs) => {
     }
 
     obs.unobserve(section);
-    section.classList.add('loaded');
+
+    setTimeout(() => {
+        section.classList.add('loaded');
+    }, 500);
 
     if (typeof window.initTable === 'function') {
       window.initTable();
     }
   });
 }, {
-  rootMargin: '-200px 0px'
+  rootMargin: '100px 0px'
 });
 
 sections.forEach(section => io.observe(section));
