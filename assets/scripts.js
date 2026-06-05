@@ -24,6 +24,10 @@ const io = new IntersectionObserver((entries, obs) => {
 
     section.classList.add('loaded');
     obs.unobserve(section);
+    
+    if (typeof window.initTable === 'function') {
+      window.initTable();
+    }
   });
 }, {
   rootMargin: '-200px 0px'

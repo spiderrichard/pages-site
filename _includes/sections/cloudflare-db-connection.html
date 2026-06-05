@@ -82,13 +82,12 @@
 		});
     })();
 
-    (function () {
-    const API_BASE = "https://example-database.spiderrichard.workers.dev";
-    const tbody = document.querySelector("#entriesTable tbody");
+	window.initTable = async function initTable() {
+		const API_BASE = "https://example-database.spiderrichard.workers.dev";
+		const tbody = document.querySelector("#entriesTable tbody");
 
-    if (!tbody) return;
+		if (!tbody) return;
 
-    async function loadEntries() {
 		try {
 			const res = await fetch(`${API_BASE}/api/entries`);
 			if (!res.ok) throw new Error(await res.text());
@@ -98,20 +97,17 @@
 			tbody.innerHTML = "";
 
 			data.results.forEach(row => {
-			const tr = document.createElement("tr");
+				const tr = document.createElement("tr");
 
-			tr.innerHTML = `
-				<td style="padding:0.5rem 0;">${row.code}</td>
-				<td style="padding:0.5rem 0;">${row.created_at}</td>
-			`;
+				tr.innerHTML = `
+					<td style="padding:0.5rem 0;">${row.value || row.code || ""}</td>
+					<td style="padding:0.5rem 0;">${row.created_at || ""}</td>
+				`;
 
-			tbody.appendChild(tr);
+				tbody.appendChild(tr);
 			});
 		} catch (err) {
 			console.error("Failed to load entries", err);
 		}
-    }
-
-    loadEntries();
-  	})();
+	};
   </script>
