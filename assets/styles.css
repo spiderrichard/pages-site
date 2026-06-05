@@ -52,7 +52,7 @@ body.fixed {
 .lazy-load {
     opacity: 0;
     transition: var(--smoothTransition);
-    transform: translateY(16px);
+    transform: translateY(100px);
     min-height: 100px;
 }
 
