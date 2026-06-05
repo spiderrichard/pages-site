@@ -33,7 +33,7 @@ const io = new IntersectionObserver((entries, obs) => {
     }
   });
 }, {
-  rootMargin: '0px 0px'
+  rootMargin: '50px 0px'
 });
 
 sections.forEach(section => io.observe(section));
