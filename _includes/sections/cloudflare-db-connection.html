@@ -47,40 +47,47 @@
 	</template>
 </section>
 <script>
-    (function () {
-		const form = document.getElementById("entryForm");
-		const input = document.getElementById("value");
+	const API_BASE = "https://example-database.spiderrichard.workers.dev";
+
+	document.addEventListener("click", async (e) => {
+		const submitButton = e.target.closest(".entry-form-submit");
+		if (!submitButton) return;
+
+		e.preventDefault();
+
+		const form = submitButton.closest("#entryForm");
+		if (!form) return;
+
+		const input = form.querySelector("#value");
 		const msg = document.getElementById("msg");
-	
-		if (!form || !input) return;
-	
-		const API_BASE = "https://example-database.spiderrichard.workers.dev";
-	
-		form.addEventListener("submit", async (e) => {
-			e.preventDefault();
-	
-			const value = input.value.trim();
-			if (!value) return;
-	
-			msg && (msg.textContent = "Saving...");
-	
-			try {
+
+		if (!input) return;
+
+		const value = input.value.trim();
+		if (!value) return;
+
+		msg && (msg.textContent = "Saving...");
+
+		try {
 			const res = await fetch(`${API_BASE}/api/entry`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ value }),
 			});
-	
+
 			if (!res.ok) throw new Error(await res.text());
-	
+
 			input.value = "";
 			msg && (msg.textContent = "Saved ✅");
-			} catch (err) {
+
+			if (typeof window.initTable === "function") {
+				window.initTable();
+			}
+		} catch (err) {
 			console.error(err);
 			msg && (msg.textContent = "Error saving ❌");
-			}
-		});
-    })();
+		}
+	});
 
 	window.initTable = async function initTable() {
 		const API_BASE = "https://example-database.spiderrichard.workers.dev";
