@@ -185,11 +185,8 @@ nav .links-list {
 
 section:nth-of-type(1) {
     margin-top: var(--navHeight);
-}
-
-.index-landing {
     min-height: fit-content;
-    height: calc(100vh + 300px);
+    height: calc(100vh - 75px);
 }
 
 .mobile-menu-toggle {
