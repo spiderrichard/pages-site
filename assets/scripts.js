@@ -22,9 +22,9 @@ const io = new IntersectionObserver((entries, obs) => {
       template.remove();
     }
 
-    section.classList.add('loaded');
     obs.unobserve(section);
-    
+    section.classList.add('loaded');
+
     if (typeof window.initTable === 'function') {
       window.initTable();
     }
